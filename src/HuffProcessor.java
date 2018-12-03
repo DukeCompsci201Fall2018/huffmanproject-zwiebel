@@ -67,8 +67,10 @@ public class HuffProcessor {
 				break;
 		    }
 			
-			else{String coding = codings[bits];
-			out.writeBits(coding.length(), Integer.parseInt(coding, 2));	
+			else{
+				String coding = codings[bits];
+				if(coding != null)
+					out.writeBits(coding.length(), Integer.parseInt(coding, 2));	
 			}
 		}
 		
