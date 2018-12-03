@@ -62,7 +62,7 @@ public class HuffProcessor {
 		out.writeBits(code.length(), Integer.parseInt(code,2));
 		
 		while(true) {	
-			int bits = in.readBits(8);
+			int bits = in.readBits(BITS_PER_WORD + 1);
 			if (bits == -1) {
 		           throw new HuffException("bad input, no PSEUDO_EOF");
 		    }
