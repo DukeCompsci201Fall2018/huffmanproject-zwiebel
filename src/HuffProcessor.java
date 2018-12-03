@@ -78,7 +78,7 @@ public class HuffProcessor {
 
 		for(int i =0; i < counts.length; ++i) {
 			if(counts[i]> 0) {
-		    pq.add(new HuffNode(i,counts[i],null,null))
+		    pq.add(new HuffNode(i,counts[i],null,null));
 			}
 		}
 
