@@ -80,6 +80,10 @@ public class HuffProcessor {
 		    writeHeader(root.myRight, out);
 	}		
 		
+<<<<<<< HEAD
+	
+=======
+>>>>>>> 82a66ea40926097629ca3444fd538c89f29622cd
 
 	private String[] makeCodingsFromTree(HuffNode root) {
 		String[] encodings = new String[ALPH_SIZE + 1];
